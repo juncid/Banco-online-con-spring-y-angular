@@ -13,9 +13,12 @@ public class PrimaryTransaction {
     private BigDecimal availableBalance;
     private PrimaryAccount primaryAccount;
 
-    public PrimaryTransaction(){}
+    public PrimaryTransaction() {
 
-    public PrimaryTransaction(Date date, String description, String type, String status, double amount, BigDecimal availableBalance, PrimaryAccount primaryAccount) {
+    }
+
+    public PrimaryTransaction(Date date, String description, String type, String status, double amount,
+                              BigDecimal availableBalance, PrimaryAccount primaryAccount) {
         this.date = date;
         this.description = description;
         this.type = type;

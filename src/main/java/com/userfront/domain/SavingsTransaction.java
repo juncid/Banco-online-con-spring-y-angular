@@ -14,9 +14,12 @@ public class SavingsTransaction {
 
     private SavingsAccount savingsAccount;
 
-    public SavingsTransaction(){}
+    public SavingsTransaction() {
 
-    public SavingsTransaction(Date date, String description, String type, String status, double amount, BigDecimal availableBalance, SavingsAccount savingsAccount) {
+    }
+
+    public SavingsTransaction(Date date, String description, String type, String status, double amount,
+                              BigDecimal availableBalance, SavingsAccount savingsAccount) {
         this.date = date;
         this.description = description;
         this.type = type;

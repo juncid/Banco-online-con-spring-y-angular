@@ -11,9 +11,10 @@ public class User {
     private String email;
     private String phone;
 
-    private boolean enabled = true;
+    private boolean enabled=true;
+
     private PrimaryAccount primaryAccount;
-    private SavingsAccount savingsAccount;
+    private SavingsAccount savingAccount;
     private List<Appointment> appointmentList;
     private List<Recipient> recipientList;
 
@@ -89,12 +90,12 @@ public class User {
         this.primaryAccount = primaryAccount;
     }
 
-    public SavingsAccount getSavingsAccount() {
-        return savingsAccount;
+    public SavingsAccount getSavingAccount() {
+        return savingAccount;
     }
 
-    public void setSavingsAccount(SavingsAccount savingsAccount) {
-        this.savingsAccount = savingsAccount;
+    public void setSavingAccount(SavingsAccount savingAccount) {
+        this.savingAccount = savingAccount;
     }
 
     public List<Appointment> getAppointmentList() {
@@ -124,6 +125,11 @@ public class User {
                 ", email='" + email + '\'' +
                 ", phone='" + phone + '\'' +
                 ", enabled=" + enabled +
+                ", primaryAccount=" + primaryAccount +
+                ", savingAccount=" + savingAccount +
+                ", appointmentList=" + appointmentList +
+                ", recipientList=" + recipientList +
                 '}';
     }
 }
+
